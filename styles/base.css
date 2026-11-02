@@ -114,7 +114,11 @@ div figcaption{
 }
 
 .card ul{
-    padding: 165px 20px;
+    padding: 75px 20px;
+}
+
+.card li{
+    margin-bottom: 30px;
 }
 
 .card ul li a{
@@ -122,6 +126,7 @@ div figcaption{
     text-decoration: underline;
     background-color: var(--w-color);
     font-size: 15px;
+    padding: 6px 0;
 }
 
 footer{
