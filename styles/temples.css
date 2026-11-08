@@ -78,7 +78,7 @@ nav a:hover{
     display: block;
 }
 
-main h1{
+main h2{
     font-family: var(--font-family);
     font-weight: 400;
     padding: 1rem;
