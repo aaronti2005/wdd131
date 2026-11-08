@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #09344b;
+    --secondary-color: #2f353a;
+    --tertiary-color: #1fc549;
+    --w-color: #fff;
+    --b-color: #000;
+    --font-family:"Black Ops One", system-ui;
+}
+
+@media (min-width: 37.5em){
+    #menu {
+		display: none; 
+	}
+
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: var(--primary-color);
+    }
+
+    header h1{
+        margin-right: 4rem;
+        font-size: 2.2rem;
+    }
+
+    nav{
+        margin: 0;
+        margin-left: auto;
+    }
+
+	.nav {
+        flex-direction: row;
+        position: static;
+        background-color: var(--primary-color);
+        
+	}
+
+	.nav a {
+		display: block;
+		flex: 1 1 100%;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+
+	}
+
+
+
+}

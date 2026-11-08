@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #09344b;
+    --secondary-color: #2f353a;
+    --tertiary-color: #1fc549;
+    --w-color: #fff;
+    --b-color: #000;
+    --font-family:"Black Ops One", system-ui;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-family: var(--font-family);
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: var(--w-color);
+    padding: 1rem;
+}
+
+nav{
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--w-color);
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before{
+    content:"☰";
+}
+
+#menu.open::before{
+    content: "❌";
+}
+
+header.open::before{
+    background-color: var(--secondary-color);
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    background-color: var(--secondary-color);
+    margin-top: -16px;
+}
+
+nav a{
+    display: none;
+    color: var(--w-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+nav a:hover{
+    background-color: var(--tertiary-color);
+    text-decoration: underline;
+    color: var(--b-color);
+}
+
+.open a{
+    display: block;
+}
+
+main h1{
+    font-family: var(--font-family);
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+	place-items: center;
+    padding: 1rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin: 0.5rem;
+}
+
+figcaption {
+    font-family: var(--font-family);
+    font-size: smaller;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--w-color);
+    text-align: center;
+    padding: 15px;
+    font-family: var(--font-family);
+}
+
+#lastModified{
+    color: var(--w-color);
+}
+
+  
