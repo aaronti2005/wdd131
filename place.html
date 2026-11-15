@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="author" content="Aaron Martinez">
+    <meta name="description" content="The complete information about the Uruguay country, with the weather and other things">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Uruguay</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 700px)">
+                <img src="images/hero-small.webp" alt="Punta del Este in Uruguay" width="600" height="750">
+            </picture>
+        </div>
+
+
+        <section class="card data">
+            <h2>Data</h2>
+            <div class="datatable">
+                <div class="row">
+                <div class="col label">Area:</div>
+                <div class="col value">176,215 sq km</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Population:</div>
+                <div class="col value">3,499,451</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Capital:</div>
+                <div class="col value">Montevideo</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Languages:</div>
+                <div class="col value">Spanish</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Currency:</div>
+                <div class="col value">Uruguayan Peso</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Time Zone:</div>
+                <div class="col value">UTC-3</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Calling Code:</div>
+                <div class="col value">+598</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Internet TLD:</div>
+                <div class="col value">.uy</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+            <img src="images/weather-logo.svg" alt="Weather logo" width="75">
+            <div class="weathertable">
+                <div class="row">
+                <div class="col label">Temperature:</div>
+                <div class="col value">9 °C</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Conditions:</div>
+                <div class="col value">Partly Cloudy</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Wind:</div>
+                <div class="col value">15 km/h</div>
+                </div>
+
+                <div class="row">
+                <div class="col label">Wind Chill:</div>
+                <div class="col value" id="WindChill"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ❇️Aaron Stick Martinez Zambrano❇️ Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

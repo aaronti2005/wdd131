@@ -1,0 +1,54 @@
+@media (min-width: 1000px){
+    header, main, footer{
+        max-width: none;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    main{
+        position: relative;
+    }
+
+    .hero img{
+        height: 550px;
+
+    }
+
+    .card{
+        position: absolute;
+        width: 320px;
+        background-color: #40d6ffcc;
+        
+    }
+
+    .card.data{
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .card.weather{
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    .card h2{
+        background-color: var(--primary-color);
+        color: var(--w-color);
+        text-align: left;
+        padding: 1rem;
+        margin-left: -2rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .card.weather h2::after{
+        content: "    ☁️";
+    }
+
+    .card.weather img {
+    display: none;
+  }
+}
