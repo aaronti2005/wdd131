@@ -8,12 +8,13 @@
 }
 
 body {
-	font-family: "EB Garamond", Arial, serif;
+	padding: 5%;
 }
 
 table {
+    width: 400px;
 	margin: 10px auto;
-	border: thin solid var(--border);
+	border: 1px solid var(--border);
 	border-collapse: collapse;
 }
 
